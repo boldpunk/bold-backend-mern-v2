@@ -1,12 +1,13 @@
 {
-  "name": "blog-mern",
+  "name": "blog-bold",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "start:dev": "nodemon index.js"
+    "start:dev": "nodemon index.js",
+    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,7 +23,8 @@
     "yarn": "^1.22.19"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=16.0.0"
+    "npm": "6.x",
+    "node": "16.x",
+    "yarn": "1.x"
   }
 }
