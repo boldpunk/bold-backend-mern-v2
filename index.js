@@ -61,10 +61,7 @@ app.patch(
   PostController.update,
 );
 
-app.listen(process.env.PORT || 4444, (err) => {
-  if (err) {
-    return console.log(err);
-  }
-
-  console.log('Server OK');
+const server = app.listen(process.env.PORT || 5000, () => {
+  const port = server.address().port;
+  console.log(`Express is working on port ${port}`);
 });
